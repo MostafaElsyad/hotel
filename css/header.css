@@ -1,0 +1,37 @@
+.min-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.nav-link {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--dark-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.login-btn {
+    position: absolute;
+    right: 0;
+}
+
+@media(max-width: 912px) {
+    .min-header {
+        z-index: 999;
+        padding: 0;
+    }
+
+    .nav-header, .login-btn {
+        display: none;
+    }
+}

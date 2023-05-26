@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    cursor: default;
+}
+
+:root {
+    --primary-color: #24AB70;
+    --secondary-color: #24ab7033;
+    --light-color: #f9f9f9;
+    --dark-color: #222;
+    --text-color: #555;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E5E5E5;
+    padding: 0 5em;
+}
+
+.sect {
+    margin-bottom: 10em;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.paragraph {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.5em;
+}
+
+.btn {
+    font-size: .87em;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.text-input {
+    width: 250px;
+    padding: .5em;
+    cursor: text;
+}
+
+.text-input::placeholder {
+    font-weight: 500;
+}
+
+/*** Main Section ***/
+.min-sect {
+    position: relative;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: #25ad721a;
+    overflow: hidden;
+}
+
+.min-sect-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5em;
+}
+
+.min-sect h1 {
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.min-sect p {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 2em;
+}
+
+.watch-ico {
+    color: var(--primary-color);
+    background-color: #e8e8e8;
+    padding: 1em;
+    margin-right: .5em;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.watch-btn {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--dark-color);
+    background-color: transparent;
+    padding: 0;
+}
+
+.min-sect-img {
+    width: 100%;
+}
+
+.nav-btn {
+    position: absolute;
+    display: none;
+    font-size: 3em !important;
+    color: var(--primary-color) !important;
+    background-color: transparent !important;
+}
+
+/*** Popular Hotels Section ***/
+.popular-hotels-sect .space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.popular-hotels-sect .space-between .paragraph {
+    width: 25%;
+}
+
+.view-btn {
+    color: var(--primary-color);
+    background-color: rgb(36, 171, 112, .1);
+}
+
+.popular-hotels-sect .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.sweet-card {
+    background-color: #ddd;
+    padding-bottom: 3em;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.sweet-card-img {
+    width: 100%;
+}
+
+.sweet-card a {
+    font-size: .75em;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.sweet-card .card-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--dark-color);
+    text-transform: capitalize;
+    margin: .5em;
+}
+
+.price-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-rate p, .rate-ico {
+    text-transform: capitalize;
+    color: var(--dark-color);
+    margin: 1em;
+}
+
+.rate-ico, .rate-persent {
+    display: inline-block;
+    color: gold;
+}
+
+/*** Facilities Section ***/
+.facilities-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paragraph-container .paragraph {
+    margin-bottom: 2.5em;
+}
+
+.contact-btn {
+    font-size: 1em;
+}
+
+.cards-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-left: 3em;
+}
+
+.facilities-card {
+    width: 12.06em;
+    height: 12.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: #999 1px solid;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.card-ico {
+    margin-bottom: 1em;
+}
+
+.facilities-card .paragraph {
+    color: var(--dark-color);
+}
+
+/*** History Section ***/
+.history-sect {
+    display: flex;
+    align-items: center;
+    background-color: #25ad721a;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.fourth-sect-paragraphs {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.fourth-sect-paragraphs .paragraph {
+    margin-bottom: 1em;
+}
+
+.explore-btn {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/*** Team Section ***/
+.team-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-sect .paragraph {
+    width: 80%;
+    margin-bottom: 2.5em;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 1em;
+}
+
+/*** Location Section ***/
+.location-sect {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.location-map {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.location-container {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    background-color: #e5e5e5;
+    padding: 2em;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.location-heading {
+    font-size: 2.25em;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 1em;
+}
+
+.location-second-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-second-container .paragraph {
+    width: 50%;
+}
+
+.location-email-input {
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: text;
+}
+
+.contact-email-btn {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.location-container-mobile {
+    display: none;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.location-container-mobile .location-second-container {
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-container-mobile .location-second-container .paragraph {
+    margin-bottom: 2em;
+}
+
+/*** Responsive Media ***/
+@media(max-width: 1280px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1024px) {
+    body {
+        font-size: 10px;
+    }
+
+    /*** History Section ***/
+    .fourth-sect-img {
+        width: 50%;
+    }
+
+    /*** Team Section ***/
+    .team-sect-img {
+        width: 30%;
+    }
+}
+
+@media(max-width: 912px) {
+    /*** Main Section ***/
+    .min-sect {
+        grid-template-columns: 1fr;
+    }
+
+    .min-sect-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .min-sect-img {
+        display: none;
+    }
+
+    .nav-btn {
+        display: flex;
+    }
+
+    /*** Facilities Section ***/
+    .facilities-sect {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .facilities-sect .slash {
+        display: none;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(5, 1fr);
+        margin: auto;
+        margin-top: 5em;
+    }
+}
+
+@media(max-width: 540px) {
+    /*** Main Section ***/
+    .nav-btn {
+        font-size: 2em !important;
+    }
+
+    /*** Popular Hotels Section ***/
+    .popular-hotels-sect .container {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-hotels-sect .space-between .paragraph {
+        width: 50%;
+    }
+    
+    /*** Facilities Section ***/
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        margin-top: 5em;
+    }
+
+    /*** History Section ***/
+    .history-sect {
+        padding: 5em;
+    }
+
+    .fourth-sect-img {
+        display: none;
+    }
+
+    /*** Team Section ***/
+    .team-sect {
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .team-sect-img {
+        width: 50%;
+    }
+
+    /*** Location Section ***/
+    .location-container {
+        display: none;
+    }
+
+    .location-container-mobile {
+        display: block;
+    }
+}
+
+@media(max-width: 425px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        font-size: 8px;
+        padding: 0;
+    }
+
+    .sect {
+        padding: 0 3em;
+    }
+
+    /*** Main Section ***/
+    .min-sect {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    /*** Location Section ***/
+    .location-container-mobile {
+        padding-left: 3em;
+    }
+}

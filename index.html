@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="ico/workspace 1.png" type="image/x-icon">
+    <title>Hotel</title>
+</head>
+<body>
+    <header class="min-header">
+        <nav class="nav-header">
+            <a href="#" class="nav-link">booking</a>
+            <a href="#" class="nav-link">facilities</a>
+            <a href="#" class="nav-link">about us</a>
+            <a href="#" class="nav-link">location</a>
+            <a href="#" class="nav-link">contact</a>
+        </nav>
+        <button id="loginBTN" class="login-btn btn">login</button>
+    </header>
+    <div id="signIN" class="sign-container">
+        <div id="loginBorder" class="login-container">
+            <div>
+                <form action="not_yet.php" method="post" class="login-form">
+                    <h3 class="title">Login</h3>
+                    <input type="email" name="email" id="email" placeholder="Email" class="text-input">
+                    <input type="password" name="password" id="password" placeholder="Password" class="text-input">
+                    <input type="submit" name="submit" placeholder="Login" class="submit-input">
+                    <input type="checkbox" name="rememberMe" id="rememberMe" placeholder="Remember Me" style="cursor: pointer;">
+                    <p value="rememberMe" style="display: inline-block;">Remember Me</p>
+                </form>
+                <p style="margin: .5em 0;">I don't have an <button id="registerBTN" class="nav-link" onclick="turnBorder()">account?</button></p>
+            </div>
+            <img src="/ico/cappuccino 1.png" alt="" width="100%">
+        </div>
+        <form action="" method="post" id="registerBorder" class="register-container">
+            <h3 class="title">Register</h3>
+            <input type="email" name="createEmail" id="createEmail" placeholder="Email">
+            <input type="password" name="createPassword" id="createPassword" placeholder="Password">
+        </form>
+    </div>
+    <div id="blurDIV" class="blur-div"></div>
+    <section class="min-sect sect">
+        <div class="min-sect-container">
+            <h1>Find your perfect place to stay</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="watch-btn btn"><i class="fa-solid fa-play watch-ico"></i> watch video</button>
+        </div>
+        <img src="img/main-section-image.png" alt="Hotel Image" class="min-sect-img">
+        <button id="navBTN" class="nav-btn btn"><i class="fa-solid fa-bars nav-ico"></i></button>
+    </section>
+    <nav id="sideNav" class="side-nav">
+        <a href="#" class="nav-link">booking</a>
+        <a href="#" class="nav-link">facilities</a>
+        <a href="#" class="nav-link">about us</a>
+        <a href="#" class="nav-link">location</a>
+        <a href="#" class="nav-link">contact</a>
+        <button id="sideNavLoginBTN" class="secondary-login-btn btn">login</button>
+    </nav>
+    <div id="sideNavBlur" class="side-nav-blur"></div>
+    <section class="popular-hotels-sect sect">
+        <h1 class="title">Our most popular Hotels</h1>
+        <div class="space-between">
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <a href="" class="view-btn btn">view all</a>
+        </div>
+        <div class="container">
+            <div class="sweet-card card">
+                <img src="/img/image.png" alt="hotel image" class="sweet-card-img">
+                <a href="">London NW8 7JT England</a>
+                <h5 class="card-heading">danubius hotel regents park</h5>
+                <div class="price-rate">
+                    <p class="price">$200 per night</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star rate-ico"></i>
+                        <p class="rate-persent">4.8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sweet-card card">
+                <img src="/img/image-1.png" alt="hotel image" class="sweet-card-img">
+                <a href="">London NW8 7JT England</a>
+                <h5 class="card-heading">the resident soho</h5>
+                <div class="price-rate">
+                    <p class="price">$200 per night</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star rate-ico"></i>
+                        <p class="rate-persent">4.8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sweet-card card">
+                <img src="/img/image-2.png" alt="hotel image" class="sweet-card-img">
+                <a href="">London NW8 7JT England</a>
+                <h5 class="card-heading">london bridge hotel</h5>
+                <div class="price-rate">
+                    <p class="price">$200 per night</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star rate-ico"></i>
+                        <p class="rate-persent">4.8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities-sect sect">
+        <div class="paragraph-container">
+            <h1 class="title">We do our best<br class="slash">facilities provide you</h1>
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+            <a href="" class="contact-btn btn">contact now</a>
+        </div>
+        <div class="cards-container">
+            <a href="#" class="facilities-card">
+                <img src="ico/workspace 1.png" class="card-ico"></img>
+                <p class="paragraph">private workspace</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/parking-area (1) 1.png" class="card-ico"></img>
+                <p class="paragraph">parking area</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/cappuccino 1.png" class="card-ico"></img>
+                <p class="paragraph">break fast</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/wifi (2) 1.png" class="card-ico"></img>
+                <p class="paragraph">free wifi</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/flash (1) 1.png" class="card-ico"></img>
+                <p class="paragraph">free electricity</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/swimmer 1.png" class="card-ico"></img>
+                <p class="paragraph">swimming pool</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/dumbell 1.png" class="card-ico"></img>
+                <p class="paragraph">exercise space</p>
+            </a>
+            <a href="#" class="facilities-card">
+                <img src="ico/ellipsis 1.png" class="card-ico"></img>
+                <p class="paragraph">other services</p>
+            </a>
+        </div>
+    </section>
+    <section class="history-sect sect">
+        <img src="img/fourth-section-image.png" alt="sweet with pool" class="fourth-sect-img">
+        <div class="fourth-sect-paragraphs">
+            <h1 class="title">Discover our History</h1>
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="explore-btn btn">explore more</button>
+        </div>
+    </section>
+    <section class="team-sect sect">
+        <div class="team-sect-paragraph">
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h3 class="name">Alexandr Ivchenko</h3>
+            <p class="paragraph">Businessman</p>
+        </div>
+        <img src="img/Mask Group.png" alt="Businessman" class="team-sect-img">
+    </section>
+    <section class="location-sect sect">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290569.059684038!2d26.38240925279692!3d26.84478092370168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1677849925660!5m2!1sen!2seg" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location-map"></iframe>
+        <div class="location-container">
+            <h3 class="location-heading">Location of our Hotels</h3>
+            <div class="location-second-container">
+                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <form action="#" method="post" class="location-form">
+                    <input type="email" name="email of location" id="Contact" placeholder="Enter your email" class="location-email-input">
+                    <input type="submit" value="Contact" placeholder="Contact" class="contact-email-btn btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="location-container-mobile">
+        <h3 class="location-heading">Location of our Hotels</h3>
+        <div class="location-second-container">
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            <form action="#" method="post" class="location-form">
+                <input type="email" name="email of location" id="Contact" placeholder="Enter your email" class="location-email-input">
+                <input type="submit" value="Contact" placeholder="Contact" class="contact-email-btn btn">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="first-container">
+            <img src="ico/workspace 1.png" alt="icon" class="footer-ico">
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="social-icons">
+                <img src="ico/Group 23.png" alt="facebook" class="social-ico">
+                <img src="ico/Group 24.png" alt="instagram" class="social-ico">
+                <img src="ico/search 1.png" alt="google search" class="social-ico">
+            </div>
+        </div>
+        <div class="second-container">
+            <h3 class="footer-heading">Home</h3>
+            <a href="#" class="paragraph">Booking</a>
+            <a href="#" class="paragraph">Facilities</a>
+            <a href="#" class="paragraph">Location</a>
+            <a href="#" class="paragraph">Contact</a>
+        </div>
+        <div class="third-container">
+            <h3 class="footer-heading">Help</h3>
+            <a href="#" class="paragraph">About Us</a>
+            <a href="#" class="paragraph">Help Center</a>
+            <a href="#" class="paragraph">Privacy Policy</a>
+            <a href="#" class="paragraph">FAQs</a>
+        </div>
+        <div class="fourth-container">
+            <h3 class="footer-heading">Get The App</h3>
+            <a href="#" class="paragraph">IOS app</a>
+            <a href="#" class="paragraph">Andriod app</a>
+        </div>
+    </footer>
+    <footer class="mobile-footer">
+        <div class="second-container">
+            <h3 class="footer-heading">Home</h3>
+            <a href="#" class="paragraph">Booking</a>
+            <a href="#" class="paragraph">Facilities</a>
+            <a href="#" class="paragraph">Location</a>
+            <a href="#" class="paragraph">Contact</a>
+        </div>
+        <div class="third-container">
+            <h3 class="footer-heading">Help</h3>
+            <a href="#" class="paragraph">About Us</a>
+            <a href="#" class="paragraph">Help Center</a>
+            <a href="#" class="paragraph">Privacy Policy</a>
+            <a href="#" class="paragraph">FAQs</a>
+        </div>
+        <div class="fourth-container">
+            <h3 class="footer-heading">Get The App</h3>
+            <a href="#" class="paragraph">IOS app</a>
+            <a href="#" class="paragraph">Andriod app</a>
+        </div>
+        <div class="first-container">
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="social-icons">
+                <img src="ico/Group 23.png" alt="facebook" class="social-ico">
+                <img src="ico/Group 24.png" alt="instagram" class="social-ico">
+                <img src="ico/search 1.png" alt="google search" class="social-ico">
+            </div>
+        </div>
+    </footer>
+    <script src="js/sign-btn.js"></script>
+    <script src="js/side-nav-btn.js"></script>
+</body>
+</html>
