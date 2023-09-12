@@ -25,25 +25,30 @@
         <button id="loginBTN" class="login-btn btn">login</button>
     </header>
     <div id="signIN" class="sign-container">
-        <div id="loginBorder" class="login-container">
-            <div>
-                <form action="not_yet.php" method="post" class="login-form">
-                    <h3 class="title">Login</h3>
-                    <input type="email" name="email" id="email" placeholder="Email" class="text-input">
-                    <input type="password" name="password" id="password" placeholder="Password" class="text-input">
-                    <input type="submit" name="submit" placeholder="Login" class="submit-input">
-                    <input type="checkbox" name="rememberMe" id="rememberMe" placeholder="Remember Me" style="cursor: pointer;">
-                    <p value="rememberMe" style="display: inline-block;">Remember Me</p>
-                </form>
-                <p style="margin: .5em 0;">I don't have an <button id="registerBTN" class="nav-link" onclick="turnBorder()">account?</button></p>
+            <div class="container">
+                <div id="loginBorder" class="log-container">
+                    <form action="not_yet.php" method="post" class="login-form">
+                        <h3 class="title">Login</h3>
+                        <input type="email" name="email" id="email" placeholder="Email" class="text-input">
+                        <input type="password" name="password" id="password" placeholder="Password" class="text-input">
+                        <input type="submit" name="submit" placeholder="Login" class="submit-input">
+                        <input type="checkbox" name="rememberMe" id="rememberMe" placeholder="Remember Me" style="cursor: pointer;">
+                        <p value="rememberMe" style="display: inline-block;">Remember Me</p>
+                    </form>
+                    <p style="margin: 1em 0;">I don't have an <button id="registerBTN" class="nav-link" onclick="turnBorder()">account?</button></p>
+                </div>
             </div>
-            <img src="/ico/cappuccino 1.png" alt="" width="100%">
-        </div>
-        <form action="" method="post" id="registerBorder" class="register-container">
-            <h3 class="title">Register</h3>
-            <input type="email" name="createEmail" id="createEmail" placeholder="Email">
-            <input type="password" name="createPassword" id="createPassword" placeholder="Password">
-        </form>
+            <div class="container">
+                <div id="registerBorder" class="log-container">
+                    <form action="" method="post" class="register-form">
+                        <h3 class="title">Register</h3>
+                        <input type="email" name="email" id="email" placeholder="Email" class="text-input">
+                        <input type="password" name="password" id="password" placeholder="Password" class="text-input">
+                        <input type="submit" name="submit" placeholder="Sign up" class="submit-input">
+                    </form>
+                    <p style="margin: 1em 0;">I have already an <button id="accountBTN" class="nav-link" onclick="turnBorder()">account</button></p>
+                </div>
+            </div>
     </div>
     <div id="blurDIV" class="blur-div"></div>
     <section class="min-sect sect">
@@ -72,7 +77,7 @@
         </div>
         <div class="container">
             <div class="sweet-card card">
-                <img src="/img/image.png" alt="hotel image" class="sweet-card-img">
+                <img src="img/image.png" alt="hotel image" class="sweet-card-img">
                 <a href="">London NW8 7JT England</a>
                 <h5 class="card-heading">danubius hotel regents park</h5>
                 <div class="price-rate">
@@ -84,7 +89,7 @@
                 </div>
             </div>
             <div class="sweet-card card">
-                <img src="/img/image-1.png" alt="hotel image" class="sweet-card-img">
+                <img src="img/image-1.png" alt="hotel image" class="sweet-card-img">
                 <a href="">London NW8 7JT England</a>
                 <h5 class="card-heading">the resident soho</h5>
                 <div class="price-rate">
@@ -96,7 +101,7 @@
                 </div>
             </div>
             <div class="sweet-card card">
-                <img src="/img/image-2.png" alt="hotel image" class="sweet-card-img">
+                <img src="img/image-2.png" alt="hotel image" class="sweet-card-img">
                 <a href="">London NW8 7JT England</a>
                 <h5 class="card-heading">london bridge hotel</h5>
                 <div class="price-rate">
@@ -249,7 +254,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/sign-btn.js"></script>
-    <script src="js/side-nav-btn.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
